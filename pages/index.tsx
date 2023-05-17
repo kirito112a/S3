@@ -16,7 +16,6 @@ import Promotions from './promotions'
 import Contaxt from './contaxt'
 import Link from 'next/link'
 import RegisterFrom from './signUp'
-import CloseBtn from './prop/close_btn'
 import Buble from './prop/bubble'
 import Advert1 from './prop/advert1'
 import Row from 'react-bootstrap/Row';
