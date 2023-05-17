@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@400&display=swap');
+
+
+
+body{
+  font-family: 'Pridi', serif;
+  background-image: radial-gradient(circle, #3550b3, #2c4ba4, #254694, #204184, #1d3c75, #283364, #2c2b54, #2b2444, #291b30, #22131f, #170b11, #000000);
+ 
+
+
+}
+nav{
+  position: relative;
+  background-image: linear-gradient(to bottom, #5c1757, #56154c, #4f1342, #481239, #401130, #391029, #311023, #2a0f1d, #220d17, #1b0910, #110408, #000000);
+  margin-top: 0px ;
+  padding: 10px 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  border: 2px solid    rgb(204, 204, 175);
+  border-radius: 3px;
+}
+.footer{
+  color: #cfc6c6;
+  background-image: linear-gradient(to top, #5c1757, #56154c, #4f1342, #481239, #401130, #391029, #311023, #2a0f1d, #220d17, #1b0910, #110408, #000000);
+}
+.navfooterbar{
+  display: none;
+}
+.navfooterbar_phone{
+  display: none;
+}
+
+.Logout,.Login{
+  border-radius: 10px;
+}
+.Logout:hover{
+   background-color: #ce3939;
+}
+.Login:hover{
+  background-color: #05a30d;
+}
+
+nav a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 12px;
+  font-size: 1.8vh;
+  padding: 5px;
+}
+nav p{
+  color: rgb(255, 255, 255);
+}
+nav a:hover{
+  color:rgb(231, 222, 141);
+}
+nav .logoIMG{
+  justify-content: left;
+  align-items: left;
+  margin-right: auto;
+  padding-left: 3%;
+}
+nav input[type=text] ,nav input[type=password]{
+  max-width: 100px;
+  max-height: 20px;
+  color: rgb(7, 7, 7);
+  margin-left: 12px;
+  font-size: 1.8vh;
+  padding: 10px;
+}
+nav input[type=button] {
+  display: none;
+}
+nav input[type=submit] {
+  max-width: 100px;
+  max-height: 30px;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 1.5vh;
+}
+.DropContent{
+  background-color: dark;
+  text-align: center;
+  min-width: 100px;
+}
+.regis_scope{
+  z-index: 20;
+  background-color: rgb(28, 49, 49);
+  text-align: center;
+  position: relative;
+
+}
+
+.box_setting{
+  background-color: rgb(28, 49, 49);
+  text-align: center;
+  
+}
+.box_setting input[type=text],input[type=password],input[type=password]{
+  background-color: rgb(30, 31, 31);
+  color: #fffefe;
+  border-radius:5px;
+  border: 1px solid    rgb(143, 143, 77);
+  min-width: 250px;
+}
+.box_setting input[type=checkbox]{
+  color: #d31111;
+  min-width: 20px;
+}
+
+
+.box_setting select{
+  background-color: rgb(30, 31, 31);
+  color: #fffefe;
+  border-radius:5px;
+  border: 1px solid    rgb(143, 143, 77);
+  min-width: 250px;
+}
+
+
+
+
+.table_friend{
+  color: #eaeaea;
+  background-color: rgb(28, 49, 49);
+}
+footer{
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
+}
+a{
+  text-decoration: none;
+}
+
+.closeBtn{
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 20px;
+  font-size: 2vh;
+  border-radius: 20%;
+  color: azure;
+
+}
+.closeBtn:hover{
+  color: #ec0ca1;
+
+}
+
+.homeicon{
+  margin-right: 5px;
+  margin-top: -5px;
+}
+
+
+.conferm_btn{
+  background-color: #e0a90f;
+}
+.img_truewallet{
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+.img_truewallet_hover{
+  border: 1px solid   ;
+ 
+  
+}
+.img_truewallet_hover:hover{
+  
+  border-radius: 10px;
+  box-shadow: rgba(248, 241, 241, 0.7) 0px 4px 8px 0px, rgba(255, 254, 254, 0.50) 0px 4px 40px 0px;
+}
+.bankname_account{
+  margin-top: 10px;
+}
+.enter_line{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.cradit_total{
+  color: #ec0c0c;
+}
+.show_index_usere{
+  font-size: 6px;
+  text-align: right;
+
+  margin-top: 7px;
+}
+.show_index_usere p{
+  font-size: 14px;
+  line-height: 2px;
+}
+.show_index_usere .login_time {
+  font-size: 10px;
+  
+}
+.amount_money_index{
+  color: green;
+}
+.dropdown-toggle::after {
+  content: none;
+}
+
+
+
+
+
+@media screen and (max-width : 480px){
+ 
+  nav{
+    margin: 5px auto;
+    margin-top: 0px ;
+    padding: 10px 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border: 1px solid   rgb(231, 231, 179);
+    border-radius: 1px;
+  }
+  .NavbarMain a{
+    display: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 1vh;
+    padding: 2px;
+  }
+
+  nav a:hover{
+     color: rgb(228, 122, 196);
+
+  }
+  
+  nav .logoIMG{
+    justify-content: left;
+    align-items: left;
+    margin-right: auto;
+    padding-left: 3%;
+  }
+
+  
+  nav input[type=text] ,nav input[type=password]{
+    display: none;
+    max-width: 50px;
+    max-height: 10px;
+    color: rgb(7, 7, 7);
+    margin-left: 12px;
+    font-size: 1.8vh;
+    padding: 10px;
+  }
+  nav input[type=submit] {
+    display: none;
+    max-width: 100px;
+    max-height: 30px;
+    margin-left: 12px;
+    margin-right: 20px;
+    font-size: 1.8vh;
+  }
+
+  nav input[type=button] {
+   display: block;
+   margin-left: 12px;
+   margin-right: 12px;
+   font-size: 1.8vh;
+  }
+  
+  footer{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    color: #777;
+    border-top: 1px solid #eaeaea;
+  }
+
+  .dropdown-toggle::after {
+    content: none;
+}
+
+  a{
+    text-decoration: none;
+  }
+
+  .navfooterbar,.navfooterbar_phone{
+    display: flex;
+    z-index: 200;
+  
+    
+  }
+  .navfooterbar ul,.navfooterbar_phone ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(36, 36, 36);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid   rgb(231, 231, 179);
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px rgb(157, 1, 172);
+    
+
+  }
+  
+  .navfooterbar li,.navfooterbar_phone li {
+    float: left;
+    
+  }
+ 
+  
+  .navfooterbar li a ,.navfooterbar_phone a {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 2.1vw;
+
+    
+  }
+  
+  .navfooterbar li a:hover ,.navfooterbar_phone:hover{
+    background-color: #111;
+  }
+
+
+
+  }
+
+
+
+
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+
+  
+  .loginicon {
+    position: absolute;
+    width: 80px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: black;
+    height: 40px;
+    left: 85%;
+    top: 10px;
+    background:#2bc6ff;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+  
+  .loginicon:hover{
+    color: white;
+  }
+  
+  .login-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .form-box{
+    margin-top: 7vh;
+    opacity:80%;
+    background: black;
+    padding-right: 80px;
+    padding-left: 80px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-text{
+    width: 100%;
+    color: white;
+    border-bottom: 2px solid white;
+    line-height: 30px;
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+  }
+  
+  label {
+    color:white;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-box{
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 5px;
+    font-size: 11pt;
+    background: transparent;
+    transition: 1s;
+    outline: none;
+  }
+  
+  .login-btn{
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48,172,251);
+    color: white;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15pt;
+    font-weight: 700;
+    transition: 1s;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .login-btn:hover{
+    transform: scale(1.03);
+    letter-spacing: 4px;
+    background-color: #7FFFD4;
+    color: #1E90FF;
+  }
+  
+  .show {
+    display: block;
+    opacity: 10;
+  }
+  
+  .show.active {
+    transform: translateY(100px) scale(0) rotateY(180deg);
+    opacity: 0;
+  }
+
+.Register_font{
+  font-size: 2.5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
