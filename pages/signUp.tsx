@@ -39,24 +39,19 @@ export default function RegisterFrom() {
       <section  >
 
 
-          <Carousel fade>
-            <Carousel.Item>
-              <Image className="img-fluid" src="/freecrdit.png" width={350} height={"500"} alt="img1" ></Image>
-              <Carousel.Caption>
-              </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item>
-              <Image className="img-fluid" src="/pro2.png" width={350} height={"500"} alt="img1" ></Image>
-              <Carousel.Caption>
-              </Carousel.Caption>
-            </Carousel.Item>
-
+          <Carousel fade controls={false} indicators={false} >
             <Carousel.Item >
-              <Image className="img-fluid" src="/pro3.png" width={350} height={"500"} alt="img1" ></Image>
+              <Image className="img-fluid regis_promotions " src="/x1.png" width={350} height={"500"} alt="img1" ></Image>
               <Carousel.Caption>
               </Carousel.Caption>
             </Carousel.Item>
+
+            <Carousel.Item>
+              <Image className="img-fluid regis_promotions" src="/x2.png" width={350} height={"500"} alt="img1" ></Image>
+              <Carousel.Caption>
+              </Carousel.Caption>
+            </Carousel.Item>
+
           </Carousel>
   
 

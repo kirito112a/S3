@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image';
+import Link from 'next/link'
 
 function SignInFrom () {
   return (
@@ -15,7 +16,9 @@ function SignInFrom () {
             <label htmlFor="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required />
             <hr></hr>
-            <button type="submit" className={styles.conferm_btn}>เข้าสู่ระบบ</button>
+            <button type="submit" className={styles.conferm_btn}  >
+            <Link href={'indexPlay'} >เข้าสู่ระบบ</Link>
+            </button>
         </div>
       </div>  
       </div>
