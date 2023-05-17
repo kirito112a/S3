@@ -4,7 +4,7 @@ import Button from "react-bootstrap/esm/Button"
 import React, { useState } from "react";
 
 
-export default function navbar() {
+export default function Footer() {
     return (<>
         <footer className="footer">
             © 2023, All Right Reserved. 
