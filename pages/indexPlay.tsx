@@ -15,7 +15,6 @@ import Game_select from './game_select'
 import Promotions from './promotions'
 import Contaxt from './contaxt'
 import Link from 'next/link'
-import { MDBRipple } from 'mdb-react-ui-kit';
 import RegisterFrom from './signUp'
 import CloseBtn from './prop/close_btn'
 import Buble from './prop/bubble'
