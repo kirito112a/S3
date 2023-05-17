@@ -2,6 +2,242 @@
 
 
 
+
+:root {
+	--clr-neon: rgb(214, 38, 170);
+	--clr-bg: rgb(255, 255, 255);
+	--clr-white: rgba(255, 255, 255, 1);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+
+.button_nav1,.button_nav2 {
+  min-height: 40px;
+ 
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--clr-neon);
+	border: var(--clr-neon) 2px solid;
+	padding: 0.25em 1em;
+	border-radius: 50em;
+  background-color: #ffffff;
+
+	text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.55), 0 0 0.2em currentColor;
+
+	box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+	position: relative;
+}
+
+.button_nav1:hover,.button_nav2:hover{
+	color: var(--clr-bg);
+  background-color:  rgb(7, 173, 214);
+	text-shadow: none;
+}
+.button_nav2:hover{
+  background-color:  rgb(13, 212, 23);
+}
+
+.button_nav1:hover::before,.button_nav2:hover::before
+{
+	opacity: 1;
+	transform: perspective(1em) rotateX(40deg) scale(1.5, 0.6);
+	transition: transform 0.5s linear;
+}
+
+
+
+
+
+@keyframes imggame {
+  0%   {width: 225px;}
+  10%   {width: 227.5px;}
+  20%   {width: 230px;}
+  30%   {width: 232.5px;}
+  40%   {width: 235px;}
+  50%   {width: 237.5px;}
+  60%   {width: 240px;}
+  70%   {width: 242.5px;}
+  80%   {width: 245px;}
+  90%   {width: 247px;}
+  100%  {width: 250px;}
+}
+
+@keyframes imggame1 {
+  100%   {width: 225px;}
+  90%   {width: 227.5px;}
+  80%   {width: 230px;}
+  70%   {width: 232.5px;}
+  60%   {width: 235px;}
+  50%   {width: 237.5px;}
+  40%   {width: 240px;}
+  30%   {width: 242.5px;}
+  20%   {width: 245px;}
+  10%   {width: 247px;}
+  0%  {width: 250px;}
+}
+
+
+.imghead{
+  
+}
+.boximgzoom{
+  width: 250px;
+}
+
+.row{
+  justify-content: center;
+}
+
+.imgzoom{
+  width: 225px;
+  animation-name: imggame1;
+  animation-duration: 0.3s;
+  animation-delay: none;
+ 
+
+}
+.imgzoom:hover{
+  width: 250px;
+  animation-name: imggame;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+ 
+}
+
+.ctrlZoom{
+  width: 100px;
+
+  animation-duration: 0.3s;
+  animation-delay: none;
+ 
+
+}
+.ctrlZoom:hover{
+  width: 130px;
+
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+ 
+}
+
+.truewallet_zoom{
+  width: 150px;
+
+  animation-duration: 0.3s;
+  animation-delay: none;
+ 
+
+}
+.truewallet_zoom:hover{
+  width: 170px;
+ 
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+ 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+
+}
+
+header > h1 {
+  text-align: center;
+}
+
+.project-filter-buttons {
+  text-align: center;
+}
+
+.project-filter-buttons button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: yellow;
+  cursor: pointer;
+  outline: none;
+}
+
+.project-filter-buttons button:hover {
+  background: orange;
+}
+
+button.clear-button {
+  border: 1px solid grey;
+  background: #fff;
+}
+
+button.clear-button:hover {
+  background: #ddd;
+}
+
+.project-filter-buttons button.active-filter {
+  background: #1ccccd;
+}
+
+.projects-grid {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  min-height: 400px;
+  min-width: 250px;
+  width: 31%;
+  margin: 10px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.project > .badges {
+  margin: 5px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project > .badges > span {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px 10px 5px 20px;
+  position: relative;
+  margin: 5px;
+}
+
+.project > .badges > span:before {
+  position: absolute;
+  content: '°';
+  font-size: 30px;
+  top: 4px;
+  left: 5px;
+}
+
+
+
+
+
+
 body{
   font-family: 'Pridi', serif;
   background-image: radial-gradient(circle, #3550b3, #2c4ba4, #254694, #204184, #1d3c75, #283364, #2c2b54, #2b2444, #291b30, #22131f, #170b11, #000000);
@@ -17,8 +253,12 @@ nav{
   display: flex;
   justify-content: right;
   align-items: center;
-  border: 2px solid    rgb(204, 204, 175);
-  border-radius: 3px;
+
+  border: 0.5px solid    var(--clr-neon);
+  border-bottom: 0.001px solid    var(--clr-neon);
+  border-left: 0.5px solid  var(--clr-neon) ;
+  border-right: 0.5px solid  var(--clr-neon) ;
+  border-radius: 1px;
 }
 .footer{
   color: #cfc6c6;
@@ -31,11 +271,36 @@ nav{
   display: none;
 }
 
-.Logout,.Login{
-  border-radius: 10px;
-}
+
+
+
+
+
+
+.Logout{
+  min-height: 40px;
+   
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #141414;
+  border:  #3f413f 2px solid;
+  padding: 0.25em 1em;
+  border-radius: 50em;
+  background-color: #ffffff;
+  
+  text-shadow: 0 0 0.125em rgba(255, 255, 255, 0.55), 0 0 0.2em currentColor;
+  
+  box-shadow: inset 0 0 0.5em 0  #3f413f, 0 0 0.5em 0 #3f413f;
+  
+  position: relative;
+  }
+
 .Logout:hover{
-   background-color: #ce3939;
+   background-color: #d32e2e;
+   color: #ecebeb;
+   border:  #ffffff 2px solid;
+   box-shadow: inset 0 0 0.5em 0  #fdfdfd, 0 0 0.5em 0 #ffffff;
 }
 .Login:hover{
   background-color: #05a30d;
@@ -90,6 +355,7 @@ nav input[type=submit] {
   position: relative;
 
 }
+
 
 .box_setting{
   background-color: rgb(28, 49, 49);
@@ -159,20 +425,7 @@ a{
 .conferm_btn{
   background-color: #e0a90f;
 }
-.img_truewallet{
-  margin-top: 5px;
-  padding-bottom: 10px;
-}
-.img_truewallet_hover{
-  border: 1px solid   ;
- 
-  
-}
-.img_truewallet_hover:hover{
-  
-  border-radius: 10px;
-  box-shadow: rgba(248, 241, 241, 0.7) 0px 4px 8px 0px, rgba(255, 254, 254, 0.50) 0px 4px 40px 0px;
-}
+
 .bankname_account{
   margin-top: 10px;
 }
@@ -204,6 +457,12 @@ a{
   content: none;
 }
 
+.regis_promotions {
+    box-shadow: rgba(248, 241, 241, 0.2) 0px 4px 8px 0px, rgba(255, 254, 254, 0.1) 1px 4px 5px 2px;
+    border: 1px solid grey;
+    border-radius: 5px;
+  
+}
 
 
 
